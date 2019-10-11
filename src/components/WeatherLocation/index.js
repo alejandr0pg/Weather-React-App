@@ -23,6 +23,26 @@ class WeatherLocation extends Component {
             city: 'Barquisimeto',
             data: data
         };
+
+        console.log('constructor');
+    }
+
+    componentDidMount() {
+        console.log('componentDidMount');
+
+        this.handleUpdateClick();
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        console.log('componentDidUpdate');
+    }
+    
+    componentWillMount() {
+        console.log('UNSAFE: componetWillMount');
+    }
+
+    componentWillUpdate(nextProps, nextState) {
+        console.log('UNSAFE: componentWillUpdate');
     }
 
     handleUpdateClick = () => {
