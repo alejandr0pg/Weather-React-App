@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './styles.scss';
 
 const Location = ({ city }) => {
     return (
-        <div><h1>{`${city}`}</h1></div>
+        <div className="locationCont">
+            <h1>{`${city}`}</h1>
+        </div>
     )
 };
 
