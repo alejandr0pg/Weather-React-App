@@ -23,7 +23,7 @@ const icons = {
 };
 
 const getWeatherIcon = weatherState => {
-    const icon = icons[weatherState];
+    let icon = icons[weatherState];
     const sizeIcon = "4x";
     // default
     if (!icon) icon = "day-sunny";
