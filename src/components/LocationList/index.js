@@ -3,7 +3,7 @@ import WeatherLocation from '../WeatherLocation';
 import PropTypes from 'prop-types';
 
 const citysComponents = cities => (
-    cities.map(city => <WeatherLocation city={city} />)
+    cities.map(city => <WeatherLocation key={city} city={city} />)
 );
 
 const LocationList = ({ cities }) => {

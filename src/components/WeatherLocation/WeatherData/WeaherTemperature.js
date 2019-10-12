@@ -22,8 +22,8 @@ const icons = {
     [RAIN]: "rain",
     [SNOW]: "snow",
     [WINDY]: "windy",
-    [THUNDER]: "thunder",
-    [DRIZZLE]: "sprinkle"
+    [THUNDER]: "thunderstorm",
+    [DRIZZLE]: "sleet"
 };
 
 const getWeatherIcon = weatherState => {
