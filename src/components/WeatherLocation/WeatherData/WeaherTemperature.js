@@ -8,7 +8,9 @@ import {
     SUN,
     RAIN,
     SNOW,
-    WINDY 
+    WINDY,
+    THUNDER,
+    DRIZZLE 
 } from '../../../constants/weathers';
 
 import './styles.scss';
@@ -19,7 +21,9 @@ const icons = {
     [SUN]: "day-sunny",
     [RAIN]: "rain",
     [SNOW]: "snow",
-    [WINDY]: "windy"
+    [WINDY]: "windy",
+    [THUNDER]: "thunder",
+    [DRIZZLE]: "sprinkle"
 };
 
 const getWeatherIcon = weatherState => {
